@@ -10,6 +10,7 @@ const MusicItem = ({ item }) => {
           <Text style={styles.artist}>{item.artist}</Text>
           <Text style={styles.year}>{item.year}</Text>
         </View>
+        <Text style={styles.album}>{item.album}</Text>
       </View>
       {item.isSoldOut && <Text style={styles.soldout}>TÜKENDİ</Text>}
     </View>
@@ -52,5 +53,10 @@ const styles = StyleSheet.create({
   year: {
     color: 'grey',
     fontSize: 14,
+  },
+  album: {
+    marginTop: 5,
+    fontSize: 14,
+    fontWeight: '600',
   },
 });
